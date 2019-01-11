@@ -839,18 +839,16 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   system_progress = 0.75
 
-  script.Print("*********************************************");
-  script.Print("*       ##### ####****   ########****       *")
-  script.Print("*     ############**** ##########******     *")
-  script.Print("*    ####     ####****#####  ****  *****    *")
-  script.Print("*    ###       ###****####   ****   ****    *")
-  script.Print("*    ####     ####****#####  ****  *****    *")
-  script.Print("*     ############**** ##########******     *")
-  script.Print("*       ##### ####****   ########****       *")
-  script.Print("*                            ****           *")
-  script.Print("*                            ****           *")
-  script.Print("* www.aicp-rom.com   -   Get your flash ON  *")
-  script.Print("*********************************************");
+  script.Print("  ######## ##            ##                  ");
+  script.Print("  ##       ##            ##                  ")
+  script.Print("  ##       ##   ######   ##    ##   ######   ")
+  script.Print("  #####    ##  ##    ##  ##   ##   ##    ##  ")
+  script.Print("  ##       ##  ##    ##  ######    ##    ##  ")
+  script.Print("  ##       ##  ##    ##  ##   ##   ##    ##  ")
+  script.Print("  ##       ##   ######   ##    ##   ######   ")
+  script.Print(" ")
+  script.Print("           wiki.maud.io/floko/pie            ")
+  script.Print("==============================================");
 
 
   build = target_info.GetBuildProp("ro.build.date")
@@ -862,7 +860,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.Print("   Device: %s (%s)"%(model, device));
   else:
     script.Print("   Device: %s"%(device));
-  script.Print("*********************************************");
+  script.Print("==============================================");
 
   if OPTIONS.wipe_user_data:
     system_progress -= 0.1
